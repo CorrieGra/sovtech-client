@@ -1,5 +1,5 @@
 
-![logo](./logo.png)
+![logo](./public/logo.png)
 
 # Overview
 
