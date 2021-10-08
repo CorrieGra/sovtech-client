@@ -1,0 +1,68 @@
+.card {
+  border: 1px solid lightgray;
+  border-radius: .25rem;
+  -moz-border-radius: .25rem;
+  -ms-border-radius: .25rem;
+  -o-border-radius: .25rem;
+  -webkit-border-radius: .25rem;
+}
+
+.card__showcase {
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px solid grey;
+}
+
+.card__details {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas: "height mass" "gender auto" "homeworld homeworld";
+  padding: 2rem;
+}
+
+.card__details > p {
+  padding: .5rem 0;
+}
+
+.card__details > #height {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: height;
+}
+
+.card__details > #mass {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mass;
+}
+
+.card__details > #gender {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: gender;
+}
+
+.card__details > #homeworld {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: homeworld;
+}
+
+@media screen and (max-width: 640px) {
+  .card__details {
+    padding: .75rem;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1007px) {
+  .card__details {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=Card.css.map */

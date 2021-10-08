@@ -1,0 +1,31 @@
+.nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 9rem;
+  padding: 2rem 10%;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.329);
+
+  & > img {
+    object-fit: contain;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem;
+    justify-items: center;
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1007px) {
+    .nav {
+      padding: 1rem 10%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.toolbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-auto-rows: 1fr;
+  row-gap: 1rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.toolbar > button {
+  padding: 0 1.5rem;
+  background-color: #1476F2;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 2rem;
+}
+
+.toolbar > button > svg {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 640px) {
+  .toolbar {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "name" "page" "filter";
+  }
+  .toolbar .custom-input:first-child {
+    grid-area: "name";
+  }
+  .toolbar .custom-input:last-child {
+    grid-area: "page";
+  }
+  .toolbar .load__cta {
+    grid-area: "filter";
+  }
+}
+
+.searchbar {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background-color: rgba(211, 211, 211, 0.199);
+}
+
+.searchbar__input {
+  width: 30rem;
+  padding: 1rem;
+  border: none;
+  background-color: transparent;
+  border-left: 2px solid #1476F2;
+}
+
+.searchbar__reset {
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.searchbar__cta {
+  height: 100%;
+  padding: 0 1.5rem;
+  background-color: #1476F2;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=SearchBar.css.map */

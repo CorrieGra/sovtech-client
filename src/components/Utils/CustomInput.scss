@@ -1,0 +1,30 @@
+.custom-input {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  max-width: max-content;
+  background-color: rgba(211, 211, 211, 0.199);
+
+  &__input {
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    border-left: 2px solid #1476F2;
+  }
+
+  &__reset {
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__cta {
+    height: 100%;
+    padding: 0 1.5rem;
+    background-color: #1476F2;
+    border: none;
+    cursor: pointer;
+  }
+}

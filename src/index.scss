@@ -5,18 +5,17 @@ html,
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
 }
 
 html {
   font-size: 62.5%;
-}
 
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 60%;
+  @media screen and (max-width: 640px) {
+    & {
+      font-size: 60%;
+    }
   }
 }
 
@@ -41,4 +40,3 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
-/*# sourceMappingURL=index.css.map */

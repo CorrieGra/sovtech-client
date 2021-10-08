@@ -1,0 +1,72 @@
+.toolbar {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-auto-rows: 1fr;
+  row-gap: 1rem;
+  max-width: max-content;
+
+  > button {
+    padding: 0 1.5rem;
+    background-color: #1476F2;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 2rem;
+
+    > svg {
+      margin-left: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    & {
+      grid-template-columns: 1fr;
+      grid-template-areas: "name"
+                           "page"
+                           "filter";
+
+      .custom-input:first-child {
+        grid-area: "name";
+      }
+
+      .custom-input:last-child {
+        grid-area: "page";
+      }
+
+      .load__cta {
+        grid-area: "filter";
+      }
+    }
+  }
+}
+
+.searchbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  max-width: max-content;
+  background-color: rgba(211, 211, 211, 0.199);
+
+  &__input {
+    width: 30rem;
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    border-left: 2px solid #1476F2;
+  }
+
+  &__reset {
+    border: none;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  &__cta {
+    height: 100%;
+    padding: 0 1.5rem;
+    background-color: #1476F2;
+    border: none;
+    cursor: pointer;
+  }
+}
