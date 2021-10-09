@@ -21,7 +21,7 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "height mass" "gender auto" "homeworld homeworld";
+      grid-template-areas: "height mass" "gender auto" "homeworld homeworld";
   padding: 2rem;
 }
 
